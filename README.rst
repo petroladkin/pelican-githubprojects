@@ -97,6 +97,20 @@ variable, as below.
         {% endfor %}
     {% endif %}
 
+TODO:
+=====
+
+- add organizations projects:
+  - refs:
+        https://api.github.com/orgs/Auxoft/repos -> {... , "contributors_url": "https://api.github.com/repos/Auxoft/skeleton/contributors", ...}
+        https://api.github.com/repos/Auxoft/pagecatch/contributors -> [ {"login": "petroladkin", ...}, ... ]
+
+- add 'forked_from_url':
+  - refs:
+        https://api.github.com/users/petroladkin/repos ->  {... , "fork": true, "url": "https://api.github.com/repos/petroladkin/DSFavIconManager", ...}
+        https://api.github.com/repos/petroladkin/DSFavIconManager -> "parent": {... , "html_url": "https://github.com/Discontinuity-srl/DSFavIconManager", ...}
+
+
 License
 =======
 
